@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(209, 232, 81);
+    font-family: "Gill Sans", sans-serif;
+    margin: 100px;
+    padding: 50px;
+}
+
+h1, p{
+    color:rgb(49, 47, 16);
+}
+
+img{
+    max-width:  200px;
+}
