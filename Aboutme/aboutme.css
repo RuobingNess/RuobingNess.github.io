@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'centauriregular';
+    src: url('centauri-webfont.woff2') format('woff2'),
+         url('centauri-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image:url("imgs/homepage.png");
+    background-size: cover;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:30px;
+ 
+}
+
+div{
+    border-style: dashed;
+    border-color: darkseagreen;
+    border-width:5px;
+    border-radius:1ch;
+    padding: 100px;
+    color:khaki;
+    text-align: center;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:5vh;
+}
