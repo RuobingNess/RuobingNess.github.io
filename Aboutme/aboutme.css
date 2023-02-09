@@ -32,7 +32,7 @@
 }
 
 .intro2:hover{
-    content:url("imgs/intro-10.png");
+    content:url("imgs/hover.png");
     z-index:3;
 }
 
