@@ -411,7 +411,7 @@ body{
     position:absolute;
   }
   
-  @keyframes typing {
+  /*@keyframes typing {
     from {
       width: 0
     }
@@ -421,7 +421,7 @@ body{
     50% {
       border-color: transparent
     }
-  }
+  }*/
 
 
 #wrapper {

@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
 <body>
    
@@ -41,9 +42,9 @@
         <img id="platemain" src="imgs/platemain.png">
         <img id="knife" src="imgs/knife.png">
         <img id="fork" src="imgs/fork.png">
-        <img id="questionmark2" src="imgs/questionmark2.png">
-        <img id="comma2" src="imgs/comma2.png">
-        <a href="https://my.newschool.edu/"><img id="period2" src="imgs/period2.png"></a>
+        <a href="questionmark/question.html"><img id="questionmark2" src="imgs/questionmark2.png"></a>
+        <a href="comma/comma.html"><img id="comma2" src="imgs/comma2.png"></a>
+        <a href="period/period.html"><img id="period2" src="imgs/period2.png"></a>
         <img id="quote2" src="imgs/quote2.png"></a>
         <div id="wrapper">
             <div class="typing">
@@ -60,9 +61,6 @@
               : ...! ...,...
             </div>
         </div>
-
-        <div class="spacer s2"></div>
-
     
         <script>
             // build scene
@@ -75,6 +73,7 @@
                             .setClassToggle("#wrapper", "visible") // add class to reveal
                             .addIndicators() // add indicators (requires plugin)
                             .addTo(controller);
+            controller.addScene(scene);
     </script>
 </body>
 
