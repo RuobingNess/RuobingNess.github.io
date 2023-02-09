@@ -1,0 +1,15 @@
+.foot{
+    
+    padding: 10px;
+    padding-left:10px;
+    position: absolute;
+    bottom: 5px;
+
+}
+
+.foot2{
+    padding: 10px;
+    bottom: 5px;
+    position: absolute;
+    right:10px;
+}

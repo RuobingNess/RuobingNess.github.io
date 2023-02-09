@@ -1,0 +1,50 @@
+body{
+    margin:10px;
+
+}
+.foot{
+    
+    padding: 10px;
+    padding-left:10px;
+    position: absolute;
+    bottom: 5px;
+
+}
+
+.foot2{
+    padding: 10px;
+    bottom: 5px;
+    position: absolute;
+    right:10px;
+}
+
+.p1{
+    width:500px;
+    margin:20px;
+}
+
+.project1{
+    left:10%;
+    position:absolute;
+    top:10%;
+    border: 1px solid black;
+    padding:20px;
+    width:fit-content;
+}
+
+  
+
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+
+    
+
+

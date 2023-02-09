@@ -1,32 +1,53 @@
-@font-face {
-    font-family: 'centauriregular';
-    src: url('centauri-webfont.woff2') format('woff2'),
-         url('centauri-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.foot{
+    
+    padding: 10px;
+    padding-left:10px;
+    position: absolute;
+    bottom: 5px;
+
 }
 
-body{
-    background-image:url("imgs/homepage.png");
-    background-size: cover;
-    height:100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin:30px;
- 
+.foot2{
+    padding: 10px;
+    bottom: 5px;
+    position: absolute;
+    right:10px;
 }
 
-div{
-    border-style: dashed;
-    border-color: darkseagreen;
-    border-width:5px;
-    border-radius:1ch;
-    padding: 100px;
-    color:khaki;
-    text-align: center;
+.intro1{
+    position:absolute;
+    left:200px;
+    top:100px;
+    width:500px;
 }
 
-h2{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:5vh;
+.intro1:hover{
+    content:url("imgs/intro-09.png");
+    z-index:2;
 }
+
+.intro2{
+    position:absolute;
+    left:700px;
+    top:100px;
+    width:550px;
+}
+
+.intro2:hover{
+    content:url("imgs/intro-10.png");
+    z-index:3;
+}
+
+.intro3{
+    position:absolute;
+    left:200px;
+    top:300px;
+    width:550px;
+}
+
+.intro3:hover{
+    content:url("imgs/intro-11.png");
+}
+
+
+  

@@ -1,20 +1,89 @@
-body {
-    background-color:rgb(209, 232, 81);
-    font-family: "Gill Sans", sans-serif;
-    margin: 100px;
-    padding: 50px;
+body{
+    margin:0
 }
 
-h1, p{
-    color:rgb(49, 47, 16);
+
+#title1{
+    position:relative;
+    width:20%;
+    left:-12px;
+    top:-50px;
 }
 
-img{
-    max-width:  200px;
+#title1:hover{
+    content:url("img/titlehover1.png");
+    
 }
 
-ol{
-    list-style-type: none;
-    list-style-position: inside;
-    list-style-image: url("");
+#title2{
+    position:relative;
+    width:20%;
+    left:-10px;
+    top:-50px;
 }
+
+#title2:hover{
+    content:url("img/titlehover2-02.png");
+
+}
+
+#title3{
+    position:relative;
+    top:-53px;
+    left:-8px;
+    width:20%;
+}
+
+#title3:hover{
+    content:url("img/titlehover3.png");
+}
+
+#title4{
+    position:relative;
+    top:-53px;
+    left: -6px;
+    width:20%;
+}
+
+#title4:hover{
+    content:url("img/titlehover2-04.png");
+}
+
+#title5{
+    position:relative;
+    top:-53px;
+    width:18.55%;
+}
+
+#title5:hover{
+    content:url("img/titlehover-05.png");
+}
+
+.foot{
+    padding: 10px;
+    padding-left:20px;
+    position: absolute;
+    bottom: 5px;
+
+}
+
+.foot2{
+    padding: 10px;
+    bottom: 5px;
+    position: absolute;
+    right:10px;
+}
+
+.project{
+    display: none;
+}
+
+.labass{
+    display: none;
+}
+
+.aboutme{
+    display: none;
+}
+
+
