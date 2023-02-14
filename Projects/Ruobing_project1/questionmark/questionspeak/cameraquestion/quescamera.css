@@ -1,0 +1,33 @@
+*{
+    cursor: url("imgs/cursor.png"), auto;
+}
+
+
+#mirror{
+    width:550px;
+    height:405px;
+    position:fixed;
+    left:;
+}
+
+
+#container {
+	margin: 0px auto;
+	width: 370px;
+	height: 275px;
+	border-radius: 50%;
+    position:fixed;
+    top:74px;
+    left:90px;
+}
+
+#videoElement {
+    position:fixed;
+    top:74px;
+	width: 370px;
+	height: 275px;
+	background-color:gray;
+    border-radius: 50%;
+    z-index:2;
+    left:90px;
+}

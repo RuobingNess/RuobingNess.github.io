@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <img class="curtain" src="imgs/curtain.png">
+        <img id="questionmark" src="imgs/questionmark.png">
+        <img id="comma" src="imgs/comma.png">
+        <img id="period" src="imgs/period.png">
+        <img id="column" src="imgs/column.png">
+        <img class="engtitle" src="imgs/engtitle.png">
+        <img class="title" src="imgs/chinese.png">
+        <img class="plate1" id="opacity" src="imgs/plate1.png">
+        <img class="plate2" src="imgs/plate2.png">
+        <img class="plate3" src="imgs/plate3.png">
+    </div>
+    <div class="foot">On Punctuation
+        <br>by Gertrude Stein
+    </div>
+
+    <div>
+        <img id="mirror1" src="imgs/mirror1.png">
+        <img id="mirror2" src="imgs/mirror2.png">
+        <img id="mirror3" src="imgs/mirror3.png">
+        <img id="pillar1" src="imgs/pillar1.png">
+        <img id="pillar2" src="imgs/pillar2.png">
+        <img id="pillar3" src="imgs/pillar3.png">
+        <img id="pillar4" src="imgs/pillar4.png">
+        <img id="platemain" src="imgs/platemain.png">
+        <img id="knife" src="imgs/knife.png">
+        <img id="fork" src="imgs/fork.png">
+        <a href="questionmark/question.html"><img id="questionmark2" src="imgs/questionmark2.png"></a>
+        <a href="comma/comma.html"><img id="comma2" src="imgs/comma2.png"></a>
+        <a href="period/period.html"><img id="period2" src="imgs/period2.png"></a>
+        <a href="column/column.html"><img id="column2" src="imgs/column.png"></a>
+
+
+        <!-- Below is the ScrollMagic added by Lai -->
+       
+        <!-- input library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+            integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+            integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
+
+        <script>
+            // init controller
+            var controller = new ScrollMagic.Controller();
+        </script>
+        <style type="text/css">
+            #reveal1 {
+                opacity: 0;
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9);
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+
+            #reveal1.visible {
+                opacity: 1;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            }
+        </style>
+        <div id="trigger1"></div>
+        <div class="typing" id="reveal1">
+            <p style="position:absolute; margin-top: 60%; margin-left: 90%; font-size:40px;">said Ruobing</p>
+            <p style="position:absolute; margin-top:225%; margin-left:15%; font-size: 50px; ">:..., ...?</p>
+        </div>
+        
+        <script>
+            // build scene
+            new ScrollMagic.Scene({
+                triggerElement: "#trigger1",
+                triggerHook: 0, // show, when scrolled 10% into view
+                duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+                offset: -400 // move trigger to center of element
+            })
+                .setClassToggle("#reveal1", "visible") // add class to reveal
+                .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        </script>
+
+        <style type="text/css">
+            #reveal2 {
+                opacity: 0;
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9);
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+
+            #reveal2.visible {
+                opacity: 1;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            }
+        </style>
+        <div id="trigger2"></div>
+        <div id="reveal2">
+            <p style="position:absolute; margin-top: 51%; margin-left: -25%; ;">: ...! ..,..</p>
+            <p style="position:absolute; margin-top:16%; margin-left:-5%; font-size:50px;">said Yuze</p>
+        </div>
+        <script>
+            // build scene
+            new ScrollMagic.Scene({
+                triggerElement: "#trigger2",
+                triggerHook: 0, // show, when scrolled 10% into view
+                duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+                offset: 500 // move trigger to center of element
+            })
+                .setClassToggle("#reveal2", "visible") // add class to reveal
+                .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        </script>
+
+
+        <style type="text/css">
+            #reveal3 {
+                opacity: 0;
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9);
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -ms-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+        }
+
+        #reveal3.visible {
+                opacity: 1;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+        }
+        </style>
+        <div id="trigger3"></div>
+        <div id="reveal3">
+            <p style="position:absolute; margin-top: 100%; margin-left: 50%; font-size:50px;">: ...., ....</p>
+            <p style="position:absolute; margin-top: 50%; margin-left: -30%;">: ...? ..!</p>
+        </div>
+        <script>
+            // build scene
+            new ScrollMagic.Scene({
+                triggerElement: "#trigger3",
+                triggerHook: 0.1, // show, when scrolled 10% into view
+                duration: "50%", // hide 10% before exiting view (80% + 10% from bottom)
+                offset: 1100 // move trigger to center of element
+            })
+                .setClassToggle("#reveal3", "visible") // add class to reveal
+                .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        </script>
+</body>
+
+</html>

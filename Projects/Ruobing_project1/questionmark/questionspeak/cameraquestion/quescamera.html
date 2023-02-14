@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quescamera.css">
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js%22%3E</script>    
+    <script language="javascript" src="p5.dom.js"></script>
+</head>
+<body>
+  
+    <img id="mirror" src="img/colormirror.png">
+    <div id="container">
+      <video autoplay="true" id="videoElement">
+      
+      </video>
+    <script>
+        var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+    </script>
+  
+    <script>
+      var popupWindow = null;
+      function positionedPopup(url,winName,w,h,t,l,scroll){
+      settings =
+      'height='+h+',width='+w+',top='+t+',left='+l+',scrollbars='+scroll+',resizable'
+      popupWindow = window.open(url,winName,settings)
+      }
+      $(document).ready(function() {$(".entry").draggable(); })
+      Splitting();
+    </script>
+</body>
+</html>

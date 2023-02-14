@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quespeak.css">
+</head>
+<body>
+    
+    <div class="foot">On Punctuation
+        <br>by Gertrude Stein
+        <h1>Question Mark</P>
+    </div>
+    <div class="wrapper">
+        <div class="typing-demo">QUESTION MARK? </div> 
+    </div>
+    <div class="wrapper2">
+    <div class="typing-demo2">WHY DO WE NEED?</div>
+    </div>  
+    <img id="speak" src="imgs/speak.png">
+
+    <audio id="audio"
+        controls
+        src="imgs/helloquestion.mp3">
+            <a href="imgs/helloquestion.mp3">
+                
+            </a>
+    </audio>
+
+    <a href="cameraquestion/quescamera.html" 
+            onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <img id="camera" src="imgs/camera-icon-52.png">
+    </a> 
+
+    <script>
+        var popupWindow = null;
+        function positionedPopup(url,winName,w,h,t,l,scroll){
+        settings =
+        'height='+h+',width='+w+',top='+t+',left='+l+',scrollbars='+scroll+',resizable'
+        popupWindow = window.open(url,winName,settings)
+        }
+        $(document).ready(function() {$(".entry").draggable(); })
+        Splitting();
+    </script>
+    
+    
+    
+</body>
+</html>

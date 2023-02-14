@@ -1,0 +1,117 @@
+*{
+    cursor: url("imgs/cursor.png"), auto;
+}
+
+body{ 
+    margin:0px;
+    background-image: url(imgs/background.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.foot{
+    background-color:black;
+    color:beige;
+    padding: 10px;
+    position:fixed;
+    width:100%;
+    
+    padding-left: 20px;
+    bottom: 0%;
+    z-index:100;
+}
+
+h1{
+    position:absolute;
+    left:80%;
+    top:-10px;
+    z-index:101;
+}
+
+.wrapper {
+    display: grid;
+    border:2px solid black;
+    place-items: center;
+    background-color:white;
+    position:absolute;
+    top:70%;
+    width:300px;
+    height: 50px;
+    margin:30px;
+    left:6%;
+  }
+  
+  .typing-demo {
+    position:absolute;
+    
+    width: 15ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+    font-size: 1.5em;
+  } 
+
+.wrapper2 {
+    display: grid;
+    border:2px solid black;
+    place-items: center;
+    background-color:white;
+    position:absolute;
+    top:60%;
+    left:70%;
+    width:300px;
+    height: 50px;
+    margin:30px;
+  }
+  .typing-demo2 {
+    position:absolute;
+   
+    width: 16ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
+    font-size: 1.5em;
+  } 
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+#speak{
+
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height:93%;
+    width:101%;
+}
+
+#audio{
+  height:20px;
+  position:absolute;
+  left:40%;
+  top:28%;
+  width:15%;
+}
+
+#camera{
+  width:50px;
+  position:absolute;
+  left:47%;
+  top:60%;
+}
