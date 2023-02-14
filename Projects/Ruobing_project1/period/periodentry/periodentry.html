@@ -8,27 +8,43 @@
     <link rel="stylesheet" href="periodentry.css">
 </head>
 <body>
-    <body>
+    
    
-        <div class="foot">On Punctuation
+    <div class="foot">On Punctuation
                 <br>by Gertrude Stein
                 <h1>Period</P>
-        </div>
+    </div>
 
-        <div class="wrapper">
+    <div class="wrapper">
             <div class="typing-demo">A PERIOD. </div> 
         </div>
         <div class="wrapper2">
         <div class="typing-demo2">WHAT HAS PERIODS TO DO WITH IT.</div>
-        </div>   
+    </div>   
 
-        <img id="periodspeak" src="imgs/periodspeak.png">
-        <audio id="audio"
+    <img id="periodspeak" src="imgs/periodspeak.png">
+    <audio id="audio"
         controls
         src="imgs/helloperiod.mp3">
             <a href="imgs/helloperiod.mp3">
                 
             </a>
+    </audio>
+    
+    <a href="periodmirror/periodmirror.html" 
+        onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <img id="camera" src="imgs/camera-icon-52.png">
+    </a> 
+
+    <script>
+        var popupWindow = null;
+        function positionedPopup(url,winName,w,h,t,l,scroll){
+        settings =
+        'height='+h+',width='+w+',top='+t+',left='+l+',scrollbars='+scroll+',resizable'
+        popupWindow = window.open(url,winName,settings)
+        }
+        $(document).ready(function() {$(".entry").draggable(); })
+        Splitting();
+    </script>
        
 </body>
 </html>

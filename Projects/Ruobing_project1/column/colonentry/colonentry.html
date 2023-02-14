@@ -22,6 +22,22 @@
             <a href="imgs/hellocolon.mp3">
                 
             </a>
+    </audio>
+
+    <a href="colonmirror/colonmirror.html" 
+            onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <img id="camera" src="imgs/camera-icon-52.png">
+    </a> 
+
+    <script>
+        var popupWindow = null;
+        function positionedPopup(url,winName,w,h,t,l,scroll){
+        settings =
+        'height='+h+',width='+w+',top='+t+',left='+l+',scrollbars='+scroll+',resizable'
+        popupWindow = window.open(url,winName,settings)
+        }
+        $(document).ready(function() {$(".entry").draggable(); })
+        Splitting();
+    </script>
 
 </body>
 </html>

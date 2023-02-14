@@ -108,3 +108,10 @@ h1{
     width:15%;
     
 }
+
+#camera{
+  width:50px;
+  position:absolute;
+  left:47%;
+  top:60%;
+}
