@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'helvetica_neue_lt_std55_roman';
+    src: url('helveticaneueltstd-roman-webfont.woff2') format('woff2'),
+         url('helveticaneueltstd-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color:black;
+    margin:10px;
+}
+
+.greenbox{
+    background-image: linear-gradient(to right, #1c522d, #f0ec85, #1f3b25);
+    width:250px;
+    height:170px;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    filter:blur(4px);
+    cursor: pointer;
+}
+
+.container-flex{
+    display:flex;
+    flex-direction: column;
+    color:whitesmoke;
+    font-family:helvetica;
+    height:100vh;
+    display: none;
+}
+
+.greenbox:hover ~ .container-flex{
+    display:block;
+}
+
+#name{
+    font-size:90px;
+    line-height: 80px;
+    height:21%;
+    
+}
+
+#intro{
+    text-align: center;
+    font-size:90px;
+    line-height:210px;
+    height:52%;
+}
+
+#time{
+    font-size:90px;
+    line-height: 78px;
+    margin-top:0px;
+    height: 20%;
+}
+
+.foot-flex{
+    display:flex;
+    flex-direction: row;
+    color:whitesmoke;
+    position:absolute;
+    bottom:0px;
+    margin:5px;
+    padding:3px;
+}
+
+.foot-flex{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+   position:fixed;
+   bottom:0;
+   right:0;
+    
+}
+
+#a{
+    margin-left: 14px;
+    width:40%;
+    padding:5px;
+}
+
+#b{
+    width:40%;
+    text-align: center;
+    font-weight: 900;
+    padding:5px;
+}
+
+#c{
+    width:40%;
+    text-align: right;
+    padding:5px;
+}

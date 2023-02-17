@@ -13,3 +13,27 @@
     position: absolute;
     right:10px;
 }
+
+.poster{
+    left:10%;
+    position:absolute;
+    top:10%;
+    border: 1px solid black;
+    padding:20px;
+    width:280px;
+    height:220px;
+}
+
+.greenbox{
+    background-image: linear-gradient(to right, #1c522d, #f0ec85, #1f3b25);
+    width:250px;
+    height:170px;
+    position: absolute;
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    filter:blur(4px);
+    cursor: pointer;
+
+}
