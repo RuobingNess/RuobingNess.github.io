@@ -10,16 +10,27 @@ body{
     background-size: cover;
 }
 
+
+@font-face {
+  font-family: 'helvetica_lt_stdlight';
+  src: url('helveticaltstd-light-webfont.woff2') format('woff2'),
+       url('helveticaltstd-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .foot{
     background-color:black;
     color:beige;
     padding: 10px;
     position:fixed;
     width:100%;
-    
+    font-stretch: extra-condensed;
     padding-left: 20px;
     bottom: 0%;
     z-index:100;
+    font-family: 'helvetica_lt_stdlight';
 }
 
 h1{
@@ -27,22 +38,41 @@ h1{
     left:80%;
     top:-10px;
     z-index:101;
+    font-stretch: extra-condensed;
+    font-family: 'helvetica_lt_stdlight';
+
 }
 
-h2{
+#home{
   position:absolute;
-  left:60%;
-  top:-0px;
+  left:30%;
+  color:beige;
+  top:-3px;
   z-index:101;
   font-size: 22px;
+  font-stretch: extra-condensed;
+  font-family: 'helvetica_lt_stdlight';
 }
 
-h3{
+#speaker{
+  color:beige;
+  position:absolute;
+  left:58%;
+  top:-3px;
+  z-index:101;
+  font-size: 22px;
+  font-stretch: extra-condensed;
+  font-family: 'helvetica_lt_stdlight';
+}
+
+#question{
   font-size: 22px;
   position:absolute;
-  left:47%;
+  right:5%;
   top:-5px;
   z-index:101;
+  font-stretch: extra-condensed;
+  font-family: 'helvetica_lt_stdlight';
 }
 
 #camera{
@@ -87,6 +117,8 @@ h3{
     
 }
 
+
+
 .wrapper {
     display: grid;
     border:2px solid black;
@@ -94,22 +126,26 @@ h3{
     background-color:white;
     position:absolute;
     top:70%;
-    width:300px;
+    width:330px;
     height: 50px;
     margin:30px;
     left:6%;
+    font-size: 1em;
   }
   
   .typing-demo {
     position:absolute;
-    
+    color:#5f6352;
+    font-stretch: extra-expanded;
+    font-family: 'helvetica_lt_stdlight';
+    font-size: 1.5em;
     width: 15ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     
-    font-size: 1.5em;
+    
   } 
 
 .wrapper2 {
@@ -118,21 +154,23 @@ h3{
     place-items: center;
     background-color:white;
     position:absolute;
+    
     top:60%;
     left:70%;
-    width:300px;
+    width:330px;
     height: 50px;
     margin:30px;
   }
+  
   .typing-demo2 {
     position:absolute;
-   
+    font-family: 'helvetica_lt_stdlight';
     width: 16ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    
+    color:#5f6352;
     font-size: 1.5em;
   } 
   

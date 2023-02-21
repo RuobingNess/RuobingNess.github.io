@@ -10,31 +10,69 @@ body{
     background-size: cover;
 }
 
+
+
+@font-face {
+  font-family: 'helvetica_lt_stdlight';
+  src: url('helveticaltstd-light-webfont.woff2') format('woff2'),
+       url('helveticaltstd-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .foot{
     background-color:black;
     color:beige;
     padding: 10px;
     position:fixed;
     width:100%;
-    
+    font-stretch: extra-condensed;
     padding-left: 20px;
     bottom: 0%;
     z-index:100;
+    font-family: 'helvetica_lt_stdlight';
 }
 
 h1{
     position:absolute;
-    left:88%;
+    left:80%;
     top:-10px;
     z-index:101;
+    font-stretch: extra-condensed;
+    font-family: 'helvetica_lt_stdlight';
+
 }
 
-p{
+#home{
+  position:absolute;
+  left:30%;
+  color:beige;
+  top:-3px;
+  z-index:101;
+  font-size: 22px;
+  font-stretch: extra-condensed;
+  font-family: 'helvetica_lt_stdlight';
+}
+
+#speaker{
+  color:beige;
+  position:absolute;
+  left:58%;
+  top:-3px;
+  z-index:101;
+  font-size: 22px;
+  font-stretch: extra-condensed;
+  font-family: 'helvetica_lt_stdlight';
+}
+
+#colon{
   font-size: 22px;
   position:absolute;
-  left:-700%;
-  top:-15px;
+  right:5%;
+  top:19px;
   z-index:101;
+  font-family: 'helvetica_lt_stdlight';
 }
 
 .wrapper {
@@ -52,7 +90,9 @@ p{
   
   .typing-demo {
     position:absolute;
-    
+    color:#5f6352;
+    font-stretch: extra-expanded;
+    font-family: 'helvetica_lt_stdlight';
     width: 9ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -76,7 +116,9 @@ p{
   }
   .typing-demo2 {
     position:absolute;
-   
+    color:#5f6352;
+    font-stretch: extra-expanded;
+    font-family: 'helvetica_lt_stdlight';
     width: 16ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
