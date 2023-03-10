@@ -69,3 +69,32 @@
 .ajson:hover{
     filter:blur(0px);
 }
+
+.responsive{
+    left:30%;
+    position:absolute;
+    top:50%;
+    border: 1px solid black;
+    padding:20px;
+    width:280px;
+    height:220px;
+}
+
+.aresponsive{
+    background: rgb(47,79,208);
+    background: linear-gradient(172deg, rgba(47,79,208,1) 0%, rgba(182,181,238,1) 100%);
+    width:250px;
+    height:170px;
+    position: absolute;
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    filter:blur(4px);
+    cursor: pointer;
+
+}
+
+.aresponsive:hover{
+    filter:blur(0px);
+}
