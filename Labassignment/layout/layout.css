@@ -110,7 +110,7 @@ body{
 }
 
 #wawa{
-    
+    top:15px;
     align-content: right;
     position:absolute;
     right:37px;
@@ -184,15 +184,7 @@ body{
     padding-top:2vh;
 }
 
-.relevant{   
-    color:rgb(151, 151, 151);
-    font-size: 15px; 
-    text-align: right;
-    margin-top:10vh;
-    margin-left:69vw;
-    margin-right: 30px;
-    padding-top:2vh;
-}
+
 
 .bars{    
     display:flex;
@@ -285,7 +277,7 @@ body{
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .sidebar{
        display:none;
     }
@@ -522,5 +514,16 @@ body{
 
   }
 
+
+@media screen and (max-width: 1000px){
+    #wawa{
+        display:none;
+    }
+
+    #profile{
+        width:35px;
+        right:20px;
+    }
+}
 
 
