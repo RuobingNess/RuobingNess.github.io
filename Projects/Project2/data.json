@@ -1,0 +1,177 @@
+[
+    {
+      "Name": "Airplane ticket from Seoul to New York",
+      "Date": "19 Aug 2022",
+      "Location": "Seoul to NY, Airport",
+      "Access": "Allows me to be on the airplane that I could enter to New York ",
+      "How": "Buy the ticket of the airline websites "
+    },
+    {
+      "Name": "International certificate of vaccination ",
+      "Date": "27 Apr 2022 -- ???",
+      "Location": "Vaccination customs inspection",
+      "Access": "Allows me to prove that I am healthy with three vaccinations that I could enter other countries",
+      "How": "Get Vaccinations from the hospitals"
+    },
+    {
+      "Name": "Visa to the United State",
+      "Date": "07 Jun 2018 -- 01 Jun 2027",
+      "Location": "United States",
+      "Access": "Allows me to enter the United States",
+      "How": "Apply for Visa, go to the embassy the visa interview and wait for approval"
+    },
+    {
+      "Name": "New School id",
+      "Date": "Sep 2022 -- May 2025",
+      "Location": "Parsons School of Design",
+      "Access": "Allows me to enter the Newschool buildings",
+      "How": "Go to get one in UC if you are a Newschool student"
+    },
+    {
+      "Name": "Key to my home",
+      "Date": "Aug 2022 -- Aug 2023",
+      "Location": "606 W 57th st, 2101",
+      "Access": "Allows me to enter the appartment that I call home in this one year",
+      "How": "Sign the contract with the building and pay for the rent every months"
+    },
+    {
+      "Name": "Mask",
+      "Date": "2019 -- ???",
+      "Location": "Everywhere",
+      "Access": "Allows me to enter public building during the pandemic years",
+      "How": "Buy a mask and wear it"
+    },
+    {
+      "Name": "PCR test Record/绿码",
+      "Date": "only 7 days of validation",
+      "Location": "Everywhere",
+      "Access": "Allows me to enter public building during the pandemic years",
+      "How": "Do the PCR test and resulted in Negative"
+    },
+    {
+      "Name": "Costco membership card",
+      "Date": "10:00 -- 20:30 (Monday -- Friday) 09:30 -- 18:00 (Saturday) 10:00 -- 18:00 (Sonday)",
+      "Location": "Costco around the world",
+      "Access": "Allows me to enter Costco and shopping",
+      "How": "Join the Costco membership and pay for it"
+    },
+    {
+      "Name": "Landing Permission ",
+      "Date": "90 days after 21 Dec 2019",
+      "Location": "Japan Immigration Inspector",
+      "Access": "Allows me to enter or land on the territory of Japan",
+      "How": "Get the Visa to Japan and enter Japan Territory "
+    },
+    {
+      "Name": "Radwimps conert ticket",
+      "Date": "Apr 29 2023",
+      "Location": "Crunchyroll Presents",
+      "Access": "Allows me to enter and join the concert of the band Radwimps on that certain date",
+      "How": "Buy the ticket via any ticket selling websites"
+    },
+    {
+      "Name": "Set of account and passward for my Google account",
+      "Date": "Ever since I remember -- ???",
+      "Location": "All Google platforms",
+      "Access": "Allows me to access all google generated tools such as googld docs and google slides...",
+      "How": "Have a computer and register for Google account"
+    },
+    {
+      "Name": "Mount Sinai patient bracelet",
+      "Date": "30 Jan 2023",
+      "Location": "Mount Sinai West",
+      "Access": "Allows my roommate to enter the hospital with the identity of a patient that she could take all the tests",
+      "How": "Be sick and go to a hospital"
+    },
+    {
+      "Name": "Mount Sinai patient visit approval",
+      "Date": "only 1 day of vlidation",
+      "Location": "Mount Sinai West",
+      "Access": "Allows me to vist my friend who was hospitalized because of appendicities",
+      "How": "Have the vaccination record, have a friend who is hospitalized, and visit the hospital"
+    },
+    {
+      "Name": "Zoom link",
+      "Date": "06 Mar 2023 -- 09 Mar 2023",
+      "Location": "Virtual",
+      "Access": "Allows Lai's 2023 Spring Interaction students to have access to the individual zoom meeting on week 7",
+      "How": "Be a Parsons student majoring Communication design and choose Lai's Interaction class for sophmore 2023 Spring "
+    },
+    {
+      "Name": "Temporary entrance approval of Buji street",
+      "Date": "only 1 day of vlidation",
+      "Location": "Buji street Nansan community",
+      "Access": "Allows the reseidents living in this area able to enter back to or leave from their home during the pandemic years (this kind of limitation and approval of entrance of leaving was happening in nearly ALL communities and ALL regions in China during the pandemics)",
+      "How": "Apply to the community and get approval from the residence and health community"
+    },
+    {
+      "Name": "Passport",
+      "Date": "19 Dec 2018 -- 18 Dec 2028",
+      "Location": "Customs in all countries ",
+      "Access": "Allows me to enter any country in the world (some with vias)",
+      "How": "Apply to the customs for sign and issue"
+    },
+    {
+      "Name": "Mail box key ",
+      "Date": "Aug 2022 -- Aug 2023",
+      "Location": "606 W 57th st ",
+      "Access": "Allows me and my roommate to have access to our mailbox of the appartment",
+      "How": "Become the residence of the building"
+    },
+    {
+      "Name": "Drivers licence",
+      "Date": "26 Jan 2023 -- 05 Nov 2025",
+      "Location": "United State driveways and the driver's seat in the car",
+      "Access": "Allows Jixiang to access the United State driveways as the identity of a driver",
+      "How": "Apply for the drivers licens and pass the tests"
+    },
+    {
+      "Name": "Key to the gym ",
+      "Date": "Aug 2022 -- Aug 2023",
+      "Location": "606 W 57th st",
+      "Access": "Allows residents to enter the fitness in the building",
+      "How": "Become the residence of the building"
+    },
+    {
+      "Name": "Chrome Heart Shopping Appointment",
+      "Date": "15 Sep 2022",
+      "Location": "755 Washington st, NY",
+      "Access": "Allows us to enter the store of Chrome Heart for in-store shopping",
+      "How": "Reserve on the official website"
+    },
+    {
+      "Name": "Disney land ticket",
+      "Date": "28 Dec 2022",
+      "Location": "Disney land in Orlando",
+      "Access": "Allows me to enter the Disney land Magical Kingdom for a single day",
+      "How": "Buy the ticket on the Disney website"
+    },
+    {
+      "Name": "Museum ticket",
+      "Date": "25 Feb 2023",
+      "Location": "New York Historical Society Museum",
+      "Access": "Allows me to enter the museum",
+      "How": "Buy the ticket from the museum"
+    },
+    {
+      "Name": "Ferry ticket",
+      "Date": "20 Aug 2022 ",
+      "Location": "New York Hudson river Ferry",
+      "Access": "Allows me to enter the cruise",
+      "How": "Buy the ticket"
+    },
+    {
+      "Name": "Pratt Visiting Approval",
+      "Date": "",
+      "Location": "",
+      "Access": "",
+      "How": ""
+    },
+    {
+      "Name": "Movie ticket",
+      "Date": "",
+      "Location": "",
+      "Access": "",
+      "How": ""
+    }
+  ]
