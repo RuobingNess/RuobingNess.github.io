@@ -33,7 +33,7 @@ const showImageButton = document.getElementById("enterparsons");
       console.log(item);
       if(item!=null){
          const sidebar= document.getElementsByClassName('sidebar');
-         sidebar[0].innerHTML="Name: " + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
+         sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
  
 });
