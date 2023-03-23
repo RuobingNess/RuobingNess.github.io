@@ -6,7 +6,7 @@ body{
     
     padding: 10px;
     padding-left:10px;
-    position: absolute;
+    position: fixed;
     bottom: 5px;
 
 }
@@ -14,7 +14,7 @@ body{
 .foot2{
     padding: 10px;
     bottom: 5px;
-    position: absolute;
+    position:fixed;
     right:10px;
 }
 
@@ -27,6 +27,20 @@ body{
     left:10%;
     position:absolute;
     top:10%;
+    border: 1px solid black;
+    padding:20px;
+    width:fit-content;
+}
+
+.p2im{
+    width:500px;
+    margin:20px;
+}
+
+.p2{
+    left:50%;
+    position:absolute;
+    top:70%;
     border: 1px solid black;
     padding:20px;
     width:fit-content;
