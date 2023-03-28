@@ -13,85 +13,130 @@
     <div class="container">
         
         <div class="pics">
+            <button class="filter-btn" id="all" data-category="all">All</button>
+            <button class="filter-btn" id="single" data-category="single">Entry</button>
+            <button class="filter-btn" id="multi" data-category="multi">Entries</button>
             
             <div class="everything">
             
-            <img class="vac" src="imgs/vac.png">
-            <button id="entervac">ENTER</button>
-
-            <img class="mask" src="imgs/mask.png">
-            <button id="maskenter">ENTER</button>
-
-            <img class="plane" src="imgs/plane.png">
-            <button id="enterplane">ENTER</button>
-
-            <a href="approval.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <img class="covid" src="imgs/covid.png">
-            </a> 
-            <button id="entercovid">ENTER</button>
-
-            <img class="gymkey" src="imgs/gymkey.png">
-            <button id="gymenter">ENTER</button>
-
-            <img class="parsonsim" src="imgs/parsonsim.png" onclick="myListener(event);"/>
-            <a href="approval.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button id="enterparsons">ENTER</button>
+            <img class="multi" id="vac" src="imgs/vac.png">
+            <a class="popup" href="vac.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entervac">ENTER</button>
             </a>
 
-            <img class="mailkey" src="imgs/mailkey.png">
-            <button id="mailenter">ENTER</button>
 
-            <img class="land" src="imgs/land.png">
-            <button id="landenter">ENTER</button>
+            <img class="multi" id="mask" src="imgs/mask.png">
+            <a href="mask.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entermask">ENTER</button>
+            </a>
+            
+            <img class="single" id="plane" src="imgs/plane.png">
+            <a href="air.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="enterplane">ENTER</button>
+            </a>
+            
+            <img class="multi" id="covid" src="imgs/covid.png">
+            <a href="covid.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entercovid">ENTER</button>
+            </a> 
+            
 
-            <img class="temp" src="imgs/temp.png">
-            <button id="tempenter">ENTER</button>
-
-            <img class="google" src="imgs/google.png">
-            <a href="https://www.google.com/" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button id="googleenter">ENTER</button>
+            <img class="single" id="gymkey" src="imgs/gymkey.png">
+            <a href="gym.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="gymenter">ENTER</button>
             </a> 
 
-            <img class="passport" src="imgs/passport.png">
-            <button id="passportenter">ENTER</button>
+            <img class="single" id="parsonsim" src="imgs/parsonsim.png" onclick="myListener(event);"/>
+            <a href="parsons.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="enterparsons">ENTER</button>
+            </a>
 
-            <img class="costco" src="imgs/costco.png">
-            <button id="costcoenter">ENTER</button>
+            <img class="single" id="mailkey" src="imgs/mailkey.png">
+            <a href="mail.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="mailenter">ENTER</button>
+            </a>
 
-            <img class="driver" src="imgs/driver.png">
-            <button id="driverenter">ENTER</button>
+            <img class="single" id="land" src="imgs/land.png">
+            <a href="japan.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="landenter">ENTER</button>
+            </a>
 
-            <img class="hospital" src="imgs/hospital.png">
-            <button id="hospitalenter">ENTER</button>
+            <img class="single" id="temp" src="imgs/temp.png">
+            <a href="temp.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="tempenter">ENTER</button>
+            </a>
+            
 
-            <img class="zoom" src="imgs/zoom.png">
-            <a href="https://newschool.zoom.us/j/95844230836?pwd=aXlGcnBmdFozNW42a2dwMVRnTFNVQT09#success" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button id="zoomenter">ENTER</button>
-            </a> 
+            <img class="multi" id="google" src="imgs/google.png">
+            <a href="#" onclick="positionedPopup('https://www.google.com/', 'FirstPopup', '530', '445', '50%', '50%', 'yes'); positionedPopup('google.html', '530', '445', '50%', '50%', 'yes'); return false;">
+                <button class="multi" id="googleenter">ENTER</button>
+              </a>
+          
 
-            <img class="visa" src="imgs/visa.png">
-            <button id="visaenter">ENTER</button>
+            <img class="multi" id="passport" src="imgs/passport.png">
+            <a href="passport.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="passportenter">ENTER</button>
+            </a>
 
-            <img class="visit" src="imgs/visit.png">
-            <button id="visitenter">ENTER</button>
+            <img class="single" id="costco" src="imgs/costco.png">
+            <a href="costco.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="costcoenter">ENTER</button>
+            </a>
 
-            <img class="red" src="imgs/red.png">
-            <button id="redenter">ENTER</button>
+            <img class="multi" id="driver" src="imgs/driver.png">
+            <a href="drive.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="driverenter">ENTER</button>
+            </a>
 
-            <img class="museum" src="imgs/museum.png">
-            <button id="museumenter">ENTER</button>
+            <img class="single" id="hospital" src="imgs/hospital.png">
+            <a href="hospital.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="hospitalenter">ENTER</button>
+            </a>
 
-            <img class="homekey" src="imgs/homekey.png">
-            <button id="homeenter">ENTER</button>
+            <img class="single" id="zoom" src="imgs/zoom.png">
+            <a href="#" onclick="positionedPopup('https://newschool.zoom.us/j/95844230836?pwd=aXlGcnBmdFozNW42a2dwMVRnTFNVQT09#success', 'FirstPopup', '530', '445', '50%', '50%', 'yes'); positionedPopup('zoom.html', '530', '445', '50%', '50%', 'yes'); return false;">
+                <button class="single" id="zoomenter">ENTER</button>
+              </a>
 
-            <img class="ferry" src="imgs/ferry.png">
-            <button id="ferryenter">ENTER</button>
+            <img class="multi" id="visa" src="imgs/visa.png">
+            <a href="visa.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="visaenter">ENTER</button>
+            </a>
 
-            <img class="chrome" src="imgs/chromeheart.png">
-            <button id="chromeenter">ENTER</button>
+            <img class="single" id="visit" src="imgs/visit.png">
+            <a href="visit.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="visitenter">ENTER</button>
+            </a>
 
-            <img class="disney" src="imgs/disney.png">
-            <button id="disneyenter">ENTER</button>
+            <img class="single" id="red" src="imgs/red.png">
+            <a href="concert.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="redenter">ENTER</button>
+            </a>
+
+            <img class="single" id="museum" src="imgs/museum.png">
+            <a href="museum.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="museumenter">ENTER</button>
+            </a>
+
+            <img class="single" id="homekey" src="imgs/homekey.png">
+            <a href="home.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="homeenter">ENTER</button>
+            </a>
+
+            <img class="single" id="ferry" src="imgs/ferry.png">
+            <a href="ferry.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="ferryenter">ENTER</button>
+            </a>
+
+            <img class="single" id="chrome" src="imgs/chromeheart.png">
+            <a href="chrome.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="chromeenter">ENTER</button>
+            </a>
+
+            <img class="single" id="disney" src="imgs/disney.png">
+            <a href="disney.html" 
+                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="disneyenter">ENTER</button>
+            </a>
         </div>
 
         </div>

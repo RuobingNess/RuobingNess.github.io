@@ -1,0 +1,619 @@
+body{ 
+    margin:0px;
+    padding:14px;
+    background-image: url("imgs/background.png");
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    background-image: url(imgs/innerfence.png);
+    background-size: cover;
+    width:15vw;
+}
+
+
+
+.pics{
+    
+    background-image: url(imgs/backpillar.png);
+    width:17vw;
+    height:93.5vh;
+    
+    flex-direction: column;
+    
+    background-size:cover;
+    
+    
+    
+    padding-left:310px;
+    padding-right:50px;
+    padding-bottom: 20px;
+}
+
+.everything{
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    margin-top: 155px;
+    height:67vh;
+    justify-items: center;
+    padding-top:30px;
+    display:flex;
+    flex-direction: column;
+    padding-right:50px;
+    padding-bottom: 20px;
+}
+
+
+
+.vac{
+    margin-top: 50px;
+    width:17vw;
+    z-index:-1;
+    
+}
+
+.plane{
+    width:17vw;
+    padding-top: 20px;
+    z-index:-1;
+}
+
+.covid{
+    width:17vw;
+    padding-top: 20px;
+    z-index:-1;
+}
+
+
+.parsonsim{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.mailkey{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.homekey{
+    width:17vw;
+    padding-top:20px;
+}
+
+.gymkey{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.costco{
+    width:17vw;
+    padding-top:20px;
+}
+
+.driver{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.passport{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.red{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.mask{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.land{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.temp{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.google{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.passport{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.hospital{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.zoom{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+
+.visa{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.visit{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.museum{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.ferry{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.chrome{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+.disney{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
+
+
+
+
+
+
+
+
+.space{
+    background-image: url("imgs/spaceframe.png");
+    background-size:cover;
+    display:flex;
+    width:53vw;
+    height:94vh;
+    padding-right: 20px;
+    padding-left:50px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+
+}
+
+
+
+#enterparsons{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    z-index:-2;
+    
+}
+
+
+
+#entercovid{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+  
+}
+
+#enterplane{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+
+    
+   
+}
+
+#entervac{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+
+
+}
+
+#mailenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+
+#homeenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+
+#gymenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#costcoenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#driverenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#passportenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#redenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+
+#maskenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+#landenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+
+}
+
+#tempenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+  
+}
+
+#googleenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+
+}
+
+#passportenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+ 
+}
+
+#hospitalenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#zoomenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    z-index:-1;
+}
+
+#visaenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    z-index:-1;
+}
+
+#visitenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+
+#museumenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+
+#ferryenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+   
+}
+
+#chromeenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    
+}
+
+#disneyenter{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#parsons{
+    display:none;
+    position: absolute;
+    width:50vw; 
+    height:78vh;
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#planespace{
+    display:none;
+    position: absolute;
+    width:780px; 
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#mailspace{
+    display:none;
+    position: absolute;
+    width:780px; 
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#covidspace{
+    display:none;
+    position: absolute;
+    width:780px; 
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#gymspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#costcospace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#visaspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#museumspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#homespace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#vacspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#ferryspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#passportspace{
+    display:none;
+    position: absolute;
+    width:780px;     
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#maskspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#hospitalspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#redspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#landspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#disneyspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#chromespace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#driverspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#tempspace{
+    display:none;
+    position: absolute;
+    width:780px;   
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#visitspace{
+    display:none;
+    position: absolute;
+    width:780px;    
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+
+
+

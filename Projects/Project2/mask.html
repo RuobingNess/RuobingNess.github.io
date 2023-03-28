@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-Demo</title>
+    
+    <script>
+        
+    fetch('data.json')
+        .then(response => response.json())
+         .then(data => {
+    //Get the list element
+    const list = document.getElementById('list');
+    
+    //Specify the name of the student you want to display
+    const desiredName = "Mask";
+    
+    //Loop through the data and find the student with the desired name
+    for (const student of data) {
+      if (student.Name === desiredName) {
+        //Create a new list item and link element for the desired student
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+
+        //Set the text content and attributes for the link element
+        a.innerHTML = "Name: " + student.Name + "<br> <br><li>Date: " + student.Date + "<br> <br><li>Location: " + student.Location + "<br><br> <li>Access: " + student.Access + "<br> <br><li>How: " + student.How;
+        
+        a.target = "_blank";
+
+        //Add the link element to the list item and the list item to the list element
+        li.appendChild(a);
+        list.appendChild(li);
+
+        //Exit the loop since we have found the desired student
+        break;
+      }
+    }
+  });
+
+    </script>
+    <style>
+        li{
+            color:black;
+        }
+
+        li a{
+            color:black;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <ul id="list">
+    </ul>
+</body>
+</html>

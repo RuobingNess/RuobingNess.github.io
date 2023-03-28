@@ -18,25 +18,37 @@ fetch('data.json')
                 //add the link to the list 
                 
                });
-           })
+})
+
+
 
 const showImageButton = document.getElementById("enterparsons");
-      const myImage = document.getElementById("parsons");
-      showImageButton.addEventListener("click", () => { 
-            myImage.style.display = "block"; 
-      const keyword="New School id";  
-      const item= myList.find(function(item,index,arr){
-            console.log(item.Name);
-             return item.Name.indexOf(keyword)>=0;
-      });
-      console.log('click');
-      console.log(item);
-      if(item!=null){
-         const sidebar= document.getElementsByClassName('sidebar');
-         sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
-      }
- 
+const myImage = document.getElementById("parsons");
+
+// add event listener to show image on button click
+showImageButton.addEventListener("click", () => { 
+  myImage.style.display = "block"; 
+  const keyword = "New School id";  
+  const item = myList.find(function(item,index,arr){
+    console.log(item.Name);
+    return item.Name.indexOf(keyword) >= 0;
+  });
+  console.log('click');
+  console.log(item);
+  if(item != null) {
+    const sidebar = document.getElementsByClassName('sidebar');
+    sidebar[0].innerHTML = "Name:" + item.Name + "<br/><br/>Date:" + item.Date + "<br/><br/>Location:" + item.Locatio + "<br/><br/>Access:" + item.Access + "<br/><br/>How:" + item.How;
+  }
 });
+
+// add event listener to hide image when any other button is clicked
+document.addEventListener("click", (event) => {
+  if (event.target.id !== "enterparsons") {
+    myImage.style.display = "none";
+  }
+});
+
+
 
 
 
@@ -57,6 +69,14 @@ const showImageButtonplane = document.getElementById("enterplane");
       }
 });
 
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "enterplane") {
+        myImageplane.style.display = "none";
+      }
+});
+
+
+
 const showImageButtonmail = document.getElementById("mailenter");
       const myImagemail = document.getElementById("mailspace");
       showImageButtonmail.addEventListener("click", () => { 
@@ -73,6 +93,13 @@ const showImageButtonmail = document.getElementById("mailenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "mailenter") {
+        myImagemail.style.display = "none";
+      }
+});
+
+
 
 const showImageButtoncovid = document.getElementById("entercovid");
       const myImagecovid = document.getElementById("covidspace");
@@ -90,6 +117,13 @@ const showImageButtoncovid = document.getElementById("entercovid");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "entercovid") {
+        myImagecovid.style.display = "none";
+      }
+});
+
+
 
 const showImageButtongym = document.getElementById("gymenter");
       const myImagegym = document.getElementById("gymspace");
@@ -107,6 +141,13 @@ const showImageButtongym = document.getElementById("gymenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "gymenter") {
+        myImagegym.style.display = "none";
+      }
+});
+
+
 
 const showImageButtoncostco = document.getElementById("costcoenter");
       const myImagecostco = document.getElementById("costcospace");
@@ -124,6 +165,13 @@ const showImageButtoncostco = document.getElementById("costcoenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "costcoenter") {
+        myImagecostco.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonvisa = document.getElementById("visaenter");
       const myImagevisa = document.getElementById("visaspace");
@@ -141,6 +189,13 @@ const showImageButtonvisa = document.getElementById("visaenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "visaenter") {
+        myImagevisa.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonmuseum = document.getElementById("museumenter");
       const myImagemuseum = document.getElementById("museumspace");
@@ -158,6 +213,13 @@ const showImageButtonmuseum = document.getElementById("museumenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "museumenter") {
+        myImagemuseum.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonhome = document.getElementById("homeenter");
       const myImagehome = document.getElementById("homespace");
@@ -175,6 +237,13 @@ const showImageButtonhome = document.getElementById("homeenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "homeenter") {
+        myImagehome.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonvac = document.getElementById("entervac");
       const myImagevac = document.getElementById("vacspace");
@@ -192,6 +261,13 @@ const showImageButtonvac = document.getElementById("entervac");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "entervac") {
+        myImagevac.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonferry = document.getElementById("ferryenter");
       const myImageferry = document.getElementById("ferryspace");
@@ -209,6 +285,13 @@ const showImageButtonferry = document.getElementById("ferryenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "ferryenter") {
+        myImageferry.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonpassport = document.getElementById("passportenter");
       const myImagepassport = document.getElementById("passportspace");
@@ -226,12 +309,18 @@ const showImageButtonpassport = document.getElementById("passportenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "passportenter") {
+        myImagepassport.style.display = "none";
+      }
+});
 
-const showImageButtonmask = document.getElementById("maskenter");
+
+
+/*const showImageButtonmask = document.getElementById("entermask");
       const myImagemask = document.getElementById("maskspace");
       showImageButtonmask.addEventListener("click", () => { 
             myImagemask.style.display = "block"; 
-
       const keyword="Mask";  
       const item= myList.find(function(item,index,arr){
             console.log(item.Name);
@@ -243,7 +332,43 @@ const showImageButtonmask = document.getElementById("maskenter");
          const sidebar= document.getElementsByClassName('sidebar');
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
+});*/
+
+const showImageButtonmask = document.getElementById("entermask");
+const myImagemask = document.getElementById("maskspace");
+
+// Add click event listener to show image button
+showImageButtonmask.addEventListener("click", () => { 
+  myImagemask.style.display = "block"; 
+
+  // Retrieve item from myList
+  const keyword="Mask";  
+  const item= myList.find(function(item,index,arr){
+    console.log(item.Name);
+    return item.Name.indexOf(keyword)>=0;
+  });
+
+  console.log('click');
+  console.log(item);
+
+  // Display item details in sidebar
+  if(item!=null){
+    const sidebar= document.getElementsByClassName('sidebar');
+    sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
+  }
 });
+
+// Add click event listener to body
+document.body.addEventListener("click", (event) => {
+  // Check if target is not the show image button or the image itself
+  if (event.target != showImageButtonmask && event.target != myImagemask) {
+    myImagemask.style.display = "none";
+  }
+});
+
+
+
+
 
 const showImageButtonhospital = document.getElementById("hospitalenter");
       const myImagehospital = document.getElementById("hospitalspace");
@@ -261,6 +386,13 @@ const showImageButtonhospital = document.getElementById("hospitalenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "hospitalenter") {
+        myImagehospital.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonred = document.getElementById("redenter");
       const myImagered = document.getElementById("redspace");
@@ -278,6 +410,13 @@ const showImageButtonred = document.getElementById("redenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "redenter") {
+        myImagered.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonland = document.getElementById("landenter");
       const myImageland = document.getElementById("landspace");
@@ -295,6 +434,13 @@ const showImageButtonland = document.getElementById("landenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "landenter") {
+        myImageland.style.display = "none";
+      }
+});
+
+
 
 const showImageButtondisney = document.getElementById("disneyenter");
       const myImagedisney = document.getElementById("disneyspace");
@@ -312,6 +458,13 @@ const showImageButtondisney = document.getElementById("disneyenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "disneyenter") {
+        myImagedisney.style.display = "none";
+      }
+});
+
+
 
 const showImageButtonchrome = document.getElementById("chromeenter");
       const myImagechrome = document.getElementById("chromespace");
@@ -329,6 +482,13 @@ const showImageButtonchrome = document.getElementById("chromeenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "chromeenter") {
+        myImagechrome.style.display = "none";
+      }
+});
+
+
 
 const showImageButtondriver = document.getElementById("driverenter");
       const myImagedriver = document.getElementById("driverspace");
@@ -346,6 +506,13 @@ const showImageButtondriver = document.getElementById("driverenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "driverenter") {
+        myImagedriver.style.display = "none";
+      }
+});
+
+
 
 const showImageButtontemp = document.getElementById("tempenter");
       const myImagetemp = document.getElementById("tempspace");
@@ -363,8 +530,15 @@ const showImageButtontemp = document.getElementById("tempenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "tempenter") {
+        myImagetemp.style.display = "none";
+      }
+});
 
-const showImageButtonvisit = document.getElementById("vistenter");
+
+
+const showImageButtonvisit = document.getElementById("visitenter");
       const myImagevisit = document.getElementById("visitspace");
       showImageButtonvisit.addEventListener("click", () => { 
             myImagevisit.style.display = "block"; 
@@ -380,15 +554,48 @@ const showImageButtonvisit = document.getElementById("vistenter");
          sidebar[0].innerHTML="Name:" + item.Name+"<br/><br/>Date:"+item.Date+"<br/><br/>Location:"+item.Locatio+"<br/><br/>Access:"+item.Access+"<br/><br/>How:"+item.How;
       }
 });
+document.addEventListener("click", (event) => {
+      if (event.target.id !== "visitenter") {
+        myImagevisit.style.display = "none";
+      }
+});
+
+
 
 
 
 var popupWindow = null;
-    function positionedPopup(url,winName,w,h,t,l,scroll){
-    settings =
-    'height='+h+',width='+w+',top='+t+',left='+l+',scrollbars='+scroll+',resizable'
-    popupWindow = window.open(url,winName,settings)
-    }
-    $(document).ready(function() {$(".entry").draggable(); })
-    Splitting();
+  function positionedPopup(url, winName, w, h, t, l, scroll) {
+    var settings = 'height=' + h + ',width=' + w + ',top=' + t + ',left=' + l + ',scrollbars=' + scroll + ',resizable';
+    var popup = window.open(url, winName, settings);
+}
 
+
+const allBtn = document.getElementById("all");
+const singleBtn = document.getElementById("single");
+const multiBtn = document.getElementById("multi");
+const pics = document.querySelector(".pics .everything");
+
+allBtn.addEventListener("click", function() {
+  pics.querySelectorAll("img, button").forEach(function(el) {
+    el.style.display = "block";
+  });
+});
+
+singleBtn.addEventListener("click", function() {
+  pics.querySelectorAll("img.single, button.single").forEach(function(el) {
+    el.style.display = "block";
+  });
+  pics.querySelectorAll("img:not(.single), button:not(.single)").forEach(function(el) {
+    el.style.display = "none";
+  });
+});
+
+multiBtn.addEventListener("click", function() {
+  pics.querySelectorAll("img.multi, button.multi").forEach(function(el) {
+    el.style.display = "block";
+  });
+  pics.querySelectorAll("img:not(.multi), button:not(.multi)").forEach(function(el) {
+    el.style.display = "none";
+  });
+});
