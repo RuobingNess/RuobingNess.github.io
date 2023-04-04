@@ -14,6 +14,14 @@ body{
     flex-direction: row;
 }
 
+.infos{
+    display:none;
+}
+
+button:focus{
+    background-color: rgb(255, 242, 0);
+}
+
 .filter-btn{
     position: fixed;
     left:30px;
@@ -22,6 +30,11 @@ body{
     width:60px;
     height: 50px;
     border-radius: 100%;
+}
+
+#introduction{
+    padding:50px;
+    display:none;
 }
 
 #all{
@@ -59,7 +72,6 @@ body{
 }
 
 
-
 .pics{
     
     background-image: url(imgs/backpillar.png);
@@ -91,13 +103,14 @@ body{
 }
 
 
-
 #vac{
     margin-top: 50px;
     width:17vw;
     z-index:-1;
     
 }
+
+
 
 #plane{
     width:17vw;
@@ -111,6 +124,10 @@ body{
     z-index:-1;
 }
 
+#no1{
+    
+}
+
 
 #parsonsim{
     width:17vw;
@@ -118,7 +135,7 @@ body{
     z-index:-1;
 }
 
-#mailkey{
+#mail{
     width:17vw;
     padding-top:20px;
     z-index:-1;
@@ -129,7 +146,7 @@ body{
     padding-top:20px;
 }
 
-#gymkey{
+#gym{
     width:17vw;
     padding-top:20px;
     z-index:-1;
@@ -238,7 +255,11 @@ body{
 }
 
 
-
+#introticket{
+    width:17vw;
+    padding-top:20px;
+    z-index:-1;
+}
 
 
 
@@ -267,7 +288,12 @@ body{
     
 }
 
-
+#enterintro{
+    margin-top: 5px;
+    width:70px;
+    margin-left: 40%;
+    justify-content: center;
+}
 
 #entercovid{
     margin-top: 5px;
@@ -646,6 +672,706 @@ body{
     margin-bottom: 40px;
 }
 
+#googlespace{
+    display:none;
+    position: absolute;
+    width:50vw; 
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+#zoomspace{
+    display:none;
+    position: absolute;
+    width:50vw; 
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .pics{
+    
+        padding-right: -1000px;
+        background: none;
+        height:10vh;
+        flex-direction: row;
+        background-size:cover;
+        
+        padding-bottom: 20px;
+        
+    }
+
+    .filter-btn{
+        position: fixed;
+        left:30px;
+        bottom:90px;
+    
+        width:60px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    
+    #all{
+        bottom:8px;
+        
+    }
+    
+    #multi{
+        bottom:8px;
+        left:100px
+    }
+    
+    #single{
+        bottom:8px;
+        left:170px
+    }
+   
+    
+    .everything{
+        overflow-x: scroll;
+        
+        margin-left: -300px;
+        height:15vh;
+        width:80vw;
+        justify-items: center;
+        padding-right: -1000px;
+        margin-top: 5px;
+        padding:20px;
+        display:flex;
+        flex-direction: row;
+        
+       
+    }
+
+    #introticket{
+        margin-top: 8px;
+        height: 97px;
+        width:97px;
+        padding-right:20px;
+        
+    }
+
+    #enterintro{
+        margin-top: 5px;
+        margin-left: -95px;
+        width:60px;
+        height:23px;
+        justify-content: center; 
+    }
+    
+    #vac{
+        margin-left: 35px;
+        margin-top: 30px;
+        height: 90px;
+        padding-right:50px;
+        
+    }
+
+    #entervac{
+        margin-top: 5px;
+        margin-left: -115px;
+        width:60px;
+        justify-content: center;
+        
+    }
+
+    #mask{
+        width:150px;
+        height: 110px;
+        padding-right:30px;
+        
+    }
+
+    #entermask{
+        margin-top: 5px;
+        margin-left: -130px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #plane{
+        width:200px;
+        height: 110px;
+        padding-right:30px;
+        
+    }
+
+    #enterplane{
+        margin-top: 5px;
+        margin-left: -150px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #covid{
+        margin-top:5px;
+        width:200px;
+        height: 100px;
+        padding-right:30px;
+        
+    }
+
+    #entercovid{
+        margin-top: 5px;
+        margin-left: -119px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #gym{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #gymenter{
+        margin-top: 5px;
+        margin-left: -102px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #parsonsim{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #enterparsons{
+        margin-top: 5px;
+        margin-left: -93px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #mail{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #mailenter{
+        margin-top: 5px;
+        margin-left: -95px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #land{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #landenter{
+        margin-top: 5px;
+        margin-left: -98px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #temp{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #tempenter{
+        margin-top: 5px;
+        margin-left: -110px;
+        width:60px;
+        justify-content: center; 
+    }
+
+
+    #google{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #googleenter{
+        margin-top: 5px;
+        margin-left: -118px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #passport{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #passportenter{
+        margin-top: 5px;
+        margin-left: -97px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #costco{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #costcoenter{
+        margin-top: 5px;
+        margin-left: -130px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #driver{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #driverenter{
+        margin-top: 5px;
+        margin-left: -127px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #hospital{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #hospitalenter{
+        margin-top: 5px;
+        margin-left: -110px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #zoom{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #zoomenter{
+        margin-top: 5px;
+        margin-left: -105px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #visa{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #visaenter{
+        margin-top: 5px;
+        margin-left: -96px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #visit{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #visitenter{
+        margin-top: 5px;
+        margin-left: -120px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #red{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #redenter{
+        margin-top: 5px;
+        margin-left: -98px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #museum{
+        margin-top:-5px;
+        width:200px;
+        height: 120px;
+        padding-right:30px;
+        
+    }
+
+    #museumenter{
+        margin-top: 5px;
+        margin-left: -155px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #homekey{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #homeenter{
+        margin-top: 5px;
+        margin-left: -95px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #ferry{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #ferryenter{
+        margin-top: 5px;
+        margin-left: -90px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #chrome{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #chromeenter{
+        margin-top: 5px;
+        margin-left: -100px;
+        width:60px;
+        justify-content: center; 
+    }
+
+    #disney{
+        margin-top:5px;
+        width:200px;
+        height: 98px;
+        padding-right:30px;
+        
+    }
+
+    #disneyenter{
+        margin-top: 5px;
+        margin-left: -93px;
+        width:60px;
+        justify-content: center; 
+    }
+
+  
+  
+  
+    .space{
+        background-image: url("imgs/spaceframe.png");
+        background-size:cover;
+        display:flex;
+        width:80vw;
+        height:50vh;
+        margin-top: 200px;
+        padding-right: 20px;
+        padding-left:50px;
+        padding-top: 16px;
+        padding-bottom: 0px;
+    }
+
+    #parsons{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #planespace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #mailspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #covidspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #gymspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #costcospace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #visaspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #museumspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #homespace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #vacspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #ferryspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #passportspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #maskspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #hospitalspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #redspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #landspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #disneyspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #chromespace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #driverspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #tempspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    #visitspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+
+    #zoomspace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+
+    #googlespace{
+        display:none;
+        position: absolute;
+        width:80vw; 
+        height:45vh;
+        margin-left: -7px;
+        margin-top:7px;
+        margin-bottom: 40px;
+    }
+    
+    .infos{
+        display:flex;
+        flex-direction: column;
+        margin-left: -300px;
+        font-size: 11px;
+    }
+
+    #introduction{
+        padding:0px;
+      
+    }
+ 
+}
 
 
 

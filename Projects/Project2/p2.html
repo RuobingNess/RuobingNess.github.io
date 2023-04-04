@@ -18,129 +18,148 @@
             <button class="filter-btn" id="multi" data-category="multi">Entries</button>
             
             <div class="everything">
+
+            <img class="single" id="introticket" src="imgs/introticket.png">
+            <a class="popup" href="intro.html" onclick="openPopupintro(); return false;">
+            <button class="single" id="enterintro">ENTER</button>
+            </a>
             
             <img class="multi" id="vac" src="imgs/vac.png">
-            <a class="popup" href="vac.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entervac">ENTER</button>
-            </a>
+            <a class="popup" href="vac.html" onclick="openPopup(); return false;">
+                <button class="multi" id="entervac">ENTER</button>
+              </a>
 
 
             <img class="multi" id="mask" src="imgs/mask.png">
-            <a href="mask.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entermask">ENTER</button>
+            <a class="popup" href="mask.html" onclick="openPopupmask(); return false;"> 
+                <button class="multi" id="entermask">ENTER</button>
             </a>
             
             <img class="single" id="plane" src="imgs/plane.png">
-            <a href="air.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="enterplane">ENTER</button>
+            <a href="air.html" onclick="openPopupplane();return false;"> 
+                <button class="single" id="enterplane">ENTER</button>
             </a>
+
+            <div id="no1"></div>
             
             <img class="multi" id="covid" src="imgs/covid.png">
-            <a href="covid.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="entercovid">ENTER</button>
+            <a href="covid.html" onclick="openPopuppcovid();return false;">
+                <button class="multi" id="entercovid">ENTER</button>
             </a> 
             
 
-            <img class="single" id="gymkey" src="imgs/gymkey.png">
-            <a href="gym.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="gymenter">ENTER</button>
+            <img class="single" id="gym" src="imgs/gymkey.png">
+            <a href="gym.html" onclick="openPopuppgym();return false"> 
+                <button class="single" id="gymenter">ENTER</button>
             </a> 
 
-            <img class="single" id="parsonsim" src="imgs/parsonsim.png" onclick="myListener(event);"/>
-            <a href="parsons.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="enterparsons">ENTER</button>
+            <img class="single" id="parsonsim" src="imgs/parsonsim.png">
+            <a href="parsons.html" onclick="openPopupparsons(); return false;"> <button class="single" id="enterparsons">ENTER</button>
             </a>
 
-            <img class="single" id="mailkey" src="imgs/mailkey.png">
-            <a href="mail.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="mailenter">ENTER</button>
+            <img class="single" id="mail" src="imgs/mailkey.png">
+            <a href="mail.html" onclick="openPopupmail(); return false;"> <button class="single" id="mailenter">ENTER</button>
             </a>
 
             <img class="single" id="land" src="imgs/land.png">
             <a href="japan.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="landenter">ENTER</button>
+            onclick="openPopupland(); return false;"> <button class="single" id="landenter">ENTER</button>
             </a>
 
             <img class="single" id="temp" src="imgs/temp.png">
             <a href="temp.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="tempenter">ENTER</button>
+            onclick="openPopuptemp(); return false;"> <button class="single" id="tempenter">ENTER</button>
             </a>
             
 
             <img class="multi" id="google" src="imgs/google.png">
-            <a href="#" onclick="positionedPopup('https://www.google.com/', 'FirstPopup', '530', '445', '50%', '50%', 'yes'); positionedPopup('google.html', '530', '445', '50%', '50%', 'yes'); return false;">
+            <a href="google.html" onclick="openPopupgoogle(); return false;"> 
                 <button class="multi" id="googleenter">ENTER</button>
               </a>
           
 
             <img class="multi" id="passport" src="imgs/passport.png">
             <a href="passport.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="passportenter">ENTER</button>
+            onclick="openPopuppassport(); return false;"> <button class="multi" id="passportenter">ENTER</button>
             </a>
 
             <img class="single" id="costco" src="imgs/costco.png">
             <a href="costco.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="costcoenter">ENTER</button>
+            onclick="openPopupcostco(); return false;"> <button class="single" id="costcoenter">ENTER</button>
             </a>
 
             <img class="multi" id="driver" src="imgs/driver.png">
             <a href="drive.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="driverenter">ENTER</button>
+            onclick="openPopupdriver(); return false;"> <button class="multi" id="driverenter">ENTER</button>
             </a>
 
             <img class="single" id="hospital" src="imgs/hospital.png">
             <a href="hospital.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="hospitalenter">ENTER</button>
+            onclick="openPopuphospital(); return false;"> <button class="single" id="hospitalenter">ENTER</button>
             </a>
 
             <img class="single" id="zoom" src="imgs/zoom.png">
-            <a href="#" onclick="positionedPopup('https://newschool.zoom.us/j/95844230836?pwd=aXlGcnBmdFozNW42a2dwMVRnTFNVQT09#success', 'FirstPopup', '530', '445', '50%', '50%', 'yes'); positionedPopup('zoom.html', '530', '445', '50%', '50%', 'yes'); return false;">
+            <a href="zoom.html" onclick="openPopupzoom(); return false;">
                 <button class="single" id="zoomenter">ENTER</button>
               </a>
 
             <img class="multi" id="visa" src="imgs/visa.png">
             <a href="visa.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="multi" id="visaenter">ENTER</button>
+            onclick="openPopupvisa(); return false;"> <button class="multi" id="visaenter">ENTER</button>
             </a>
 
             <img class="single" id="visit" src="imgs/visit.png">
             <a href="visit.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="visitenter">ENTER</button>
+            onclick="openPopupvisit(); return false;"> <button class="single" id="visitenter">ENTER</button>
             </a>
 
             <img class="single" id="red" src="imgs/red.png">
             <a href="concert.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="redenter">ENTER</button>
+            onclick="openPopupred(); return false;"> <button class="single" id="redenter">ENTER</button>
             </a>
 
             <img class="single" id="museum" src="imgs/museum.png">
             <a href="museum.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="museumenter">ENTER</button>
+            onclick="openPopupmuseum(); return false;"> <button class="single" id="museumenter">ENTER</button>
             </a>
 
             <img class="single" id="homekey" src="imgs/homekey.png">
             <a href="home.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"> <button class="single" id="homeenter">ENTER</button>
+            onclick="openPopuphome(); return false;"> <button class="single" id="homeenter">ENTER</button>
             </a>
 
             <img class="single" id="ferry" src="imgs/ferry.png">
             <a href="ferry.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="ferryenter">ENTER</button>
+            onclick="openPopupferry(); return false;"> <button class="single" id="ferryenter">ENTER</button>
             </a>
 
             <img class="single" id="chrome" src="imgs/chromeheart.png">
             <a href="chrome.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="chromeenter">ENTER</button>
+            onclick="openPopupchrome(); return false;"> <button class="single" id="chromeenter">ENTER</button>
             </a>
 
             <img class="single" id="disney" src="imgs/disney.png">
             <a href="disney.html" 
-                onclick="positionedPopup(this.href,'pull down','530','445','50%','50%','yes');return false"><button class="single" id="disneyenter">ENTER</button>
+            onclick="openPopupdisney(); return false;"> <button class="single" id="disneyenter">ENTER</button>
             </a>
+        </div>
+        <div class="infos">
+           
         </div>
 
         </div>
         <div class="space">
+            <div id="introduction">
+                During the Pandemic period, there were various places where locations 
+                restricts people from entering and exiting, evne if when people were
+                going back home or exiting from their homes. The communities were sending out 
+                records of entrance that people need approvals in order to enter or exist.
+                Certificte of access was necessary for all citizens in China, even if they want
+                to go to hospital or any other public places. Same thing happens everywhere around 
+                the world that we need vaccination form in order to access various places and there 
+                were numerous similar cases like such. Such certificate of access seems to bear the 
+                memories of that certain period and perlex.
+            </div>
             <img id="vacspace" src="imgs/vacspace.png">
             <img id="maskspace" src="imgs/maskspace.png">
             <img id="planespace" src="imgs/planespace.png">
@@ -151,6 +170,8 @@
             <img id="landspace" src="imgs/landspace.png">
             <img id="tempspace" src="imgs/tempspace.png">
             <img id="passportspace" src="imgs/passportspace.png">
+            <img id="googlespace" src="imgs/googlespace.png">
+            <img id="zoomspace" src="imgs/zoomspace.png">
             <img id="costcospace" src="imgs/costcospace.png">
             <img id="driverspace" src="imgs/driverspace.png">
             <img id="hospitalspace" src="imgs/hospitalspace.png">
