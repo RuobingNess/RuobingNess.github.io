@@ -7,4 +7,20 @@ body{
     width:100vw;
     position: absolute;
     bottom: 0px;
+    height:1700px;
+
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-color:#ebd74b;
+    }
+    .noen{
+        height:300px;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
 }
