@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  position:absolute;
+}
+canvas {
+  display: block;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src:url("HelveticaNeueLTStd-Lt.otf");
+}
+
+#title{
+  font-size:30px;
+  position:absolute;
+  top:470px;
+  left:350px;
+  font-family:myFirstFont;
+  line-height: 70px;
+}
+
+#description{
+  position:absolute;
+}
+
+#data{
+  position:absolute;
+}
+
+#data2{
+  position:absolute;
+}
+
+#box{
+  width:90px;
+  position:absolute;
+  top: 86%;
+left: 93%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+
+animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.info{
+  width:90px;
+  position:absolute;
+  top: 88%;
+left: 94.6%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
