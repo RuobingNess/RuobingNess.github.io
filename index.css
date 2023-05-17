@@ -5,8 +5,8 @@ body{
 
 #title1{
     position:relative;
-    width:20%;
-    left:-12px;
+    width:19%;
+    left:1px;
     top:-50px;
 }
 
@@ -17,8 +17,8 @@ body{
 
 #title2{
     position:relative;
-    width:20%;
-    left:-10px;
+    width:19%;
+    left:5px;
     top:-50px;
 }
 
@@ -30,8 +30,8 @@ body{
 #title3{
     position:relative;
     top:-53px;
-    left:-8px;
-    width:20%;
+    left:20px;
+    width:19%;
 }
 
 #title3:hover{
@@ -41,8 +41,8 @@ body{
 #title4{
     position:relative;
     top:-53px;
-    left: -6px;
-    width:20%;
+    left: 40px;
+    width:19%;
 }
 
 #title4:hover{
@@ -52,7 +52,8 @@ body{
 #title5{
     position:relative;
     top:-53px;
-    width:18.55%;
+    width:18%;
+    left:60px;
 }
 
 #title5:hover{
@@ -86,4 +87,26 @@ body{
     display: none;
 }
 
+@media (max-width: 800px) {
+    #title1{
+        
+        top:-20px;
+    }
+    #title2{
+        
+        top:-20px;
+    }
+    #title3{
+        left:10px;
+        top:-20px;
+    }
+    #title4{
+        left:15px;
+        top:-20px;
+    }
+    #title5{
+        left:20px;
+        top:-20px;
+    }
+  }
 

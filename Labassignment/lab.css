@@ -2,7 +2,7 @@
     
     padding: 10px;
     padding-left:10px;
-    position: absolute;
+    position: fixed;
     bottom: 5px;
 
 }
@@ -10,31 +10,36 @@
 .foot2{
     padding: 10px;
     bottom: 5px;
-    position: absolute;
+    position: fixed;
     right:10px;
 }
 
 .poster{
-    left:10%;
-    position:absolute;
-    top:10%;
+   
+   
+    
     border: 1px solid black;
     padding:20px;
     width:280px;
     height:220px;
 }
 
-
+.container{
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    align-items: center;
+   
+   
+}
 
 .greenbox{
     background-image: linear-gradient(to right, #1c522d, #f0ec85, #1f3b25);
     width:250px;
     height:170px;
-    position: absolute;
-        top: 55%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+   margin: 15px;
     filter:blur(4px);
     cursor: pointer;
 
@@ -45,9 +50,8 @@
 }
 
 .json{
-    left:50%;
-    position:absolute;
-    top:10%;
+    margin:20px;
+    
     border: 1px solid black;
     padding:20px;
     width:280px;
@@ -58,11 +62,7 @@
     background-image:url("img/jsonimage.png");
     width:250px;
     height:170px;
-    position: absolute;
-        top: 55%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+    margin: 15px;
     filter:blur(4px);
     cursor: pointer;
 
@@ -73,9 +73,7 @@
 }
 
 .responsive{
-    left:30%;
-    position:absolute;
-    top:50%;
+    
     border: 1px solid black;
     padding:20px;
     width:280px;
@@ -83,9 +81,7 @@
 }
 
 .colorchange{
-    left:70%;
-    position:absolute;
-    top:50%;
+    margin:20px;
     border: 1px solid black;
     padding:20px;
     width:280px;
@@ -93,15 +89,11 @@
 }
 
 .acolorchange{
-    
+    margin: 15px;
     background-image:url("img/change.png");
     width:250px;
     height:170px;
-    position: absolute;
-        top: 55%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+   
     filter:blur(4px);
     cursor: pointer;
 
@@ -112,11 +104,7 @@
     background: linear-gradient(172deg, rgba(47,79,208,1) 0%, rgba(182,181,238,1) 100%);
     width:250px;
     height:170px;
-    position: absolute;
-        top: 55%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+    margin: 15px;
     filter:blur(4px);
     cursor: pointer;
 
